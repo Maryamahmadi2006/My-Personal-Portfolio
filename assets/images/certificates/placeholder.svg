@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 340">
+  <rect width="480" height="340" fill="#f0f0ee"/>
+  <rect x="14" y="14" width="452" height="312" rx="10" fill="none" stroke="#c9c9c5" stroke-width="2" stroke-dasharray="8 8"/>
+  <g fill="#a8a8a3" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <circle cx="240" cy="140" r="26" fill="none" stroke="#a8a8a3" stroke-width="2"/>
+    <path d="M228 140l8 8 18-18" fill="none" stroke="#a8a8a3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="240" y="205" font-size="16">Add your certificate image</text>
+    <text x="240" y="228" font-size="12">replace this file in assets/images/certificates/</text>
+  </g>
+</svg>
