@@ -22,15 +22,15 @@ export default function Work() {
   return (
     <>
       <section className="page-hero shell">
-        <div className="eyebrow reveal">• Selected work</div>
-        <h1 className="page-title reveal">
+        <Reveal className="eyebrow">• Selected work</Reveal>
+        <Reveal as="h1" className="page-title">
           A collection of web projects built while learning, experimenting, and
           growing.
-        </h1>
-        <p className="page-intro reveal">
+        </Reveal>
+        <Reveal as="p" className="page-intro">
           Selected educational, personal, collaborative, and WordPress projects
           from my front-end development journey.
-        </p>
+        </Reveal>
       </section>
 
       <section className="section shell">
@@ -58,7 +58,7 @@ export default function Work() {
         </div>
       </section>
 
-      <section className="cta shell reveal">
+      <Reveal as="section" className="cta shell">
         <div>
           <div className="eyebrow">• Next project</div>
           <h2>Could this be yours?</h2>
@@ -67,7 +67,7 @@ export default function Work() {
         <Link className="button button-white" to="/contact">
           Get in touch <span>→</span>
         </Link>
-      </section>
+      </Reveal>
     </>
   );
 }

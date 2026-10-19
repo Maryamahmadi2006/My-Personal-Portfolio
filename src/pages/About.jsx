@@ -94,11 +94,11 @@ export default function About() {
   return (
     <>
       <section className="page-hero shell">
-        <div className="eyebrow reveal">• About me</div>
-        <h1 className="page-title reveal reveal-scale">
+        <Reveal className="eyebrow">• About me</Reveal>
+        <Reveal as="h1" className="page-title" variant="scale">
           I'm a Front-End Developer & Web Designer building my path through
           technology, design, and continuous learning.
-        </h1>
+        </Reveal>
       </section>
 
       <section className="section shell">
@@ -132,9 +132,9 @@ export default function About() {
       </section>
 
       <section className="section shell">
-        <div className="section-heading reveal">
+        <Reveal className="section-heading">
           <div className="eyebrow">• Experience</div>
-        </div>
+        </Reveal>
         <div className="timeline">
           {EXPERIENCE.map((item, index) => (
             <Reveal as="article" className="timeline-row" delay={index * 90} key={item.title}>
@@ -149,9 +149,9 @@ export default function About() {
       </section>
 
       <section className="section shell">
-        <div className="section-heading reveal">
+        <Reveal className="section-heading">
           <div className="eyebrow">• Capabilities</div>
-        </div>
+        </Reveal>
         <div className="capability-grid">
           {CAPABILITIES.map((item, index) => (
             <Reveal as="div" className="capability" delay={index * 90} key={item.title}>
@@ -163,7 +163,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="cta shell reveal">
+      <Reveal as="section" className="cta shell">
         <div>
           <div className="eyebrow">• Let's work together</div>
           <h2>Good work starts with a good conversation.</h2>
@@ -171,7 +171,7 @@ export default function About() {
         <Link className="button button-white" to="/contact">
           Contact me <span>→</span>
         </Link>
-      </section>
+      </Reveal>
     </>
   );
 }

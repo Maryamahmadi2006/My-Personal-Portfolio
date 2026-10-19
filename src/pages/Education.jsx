@@ -117,21 +117,21 @@ export default function Education() {
   return (
     <>
       <section className="page-hero shell">
-        <div className="eyebrow reveal">• Education & Learning</div>
-        <h1 className="page-title reveal">
+        <Reveal className="eyebrow">• Education & Learning</Reveal>
+        <Reveal as="h1" className="page-title">
           My education has been a journey of learning, experimenting, and
           building.
-        </h1>
-        <p className="page-intro reveal">
+        </Reveal>
+        <Reveal as="p" className="page-intro">
           My learning journey combines formal education, technical training,
           leadership programs, and continuous self-learning.
-        </p>
+        </Reveal>
       </section>
 
       <section className="section shell">
-        <div className="section-heading reveal">
+        <Reveal className="section-heading">
           <div className="eyebrow">• Education timeline</div>
-        </div>
+        </Reveal>
         <div className="timeline">
           {EDUCATION_TIMELINE.map((item) => (
             <Reveal as="article" className="timeline-row" key={item.title}>
@@ -149,9 +149,9 @@ export default function Education() {
       </section>
 
       <section className="section shell">
-        <div className="section-heading reveal">
+        <Reveal className="section-heading">
           <div className="eyebrow">• Additional learning</div>
-        </div>
+        </Reveal>
         <div className="capability-grid">
           {ADDITIONAL_LEARNING.map((item) => (
             <Reveal as="article" className="capability" key={item.title}>
@@ -164,9 +164,9 @@ export default function Education() {
       </section>
 
       <section className="section shell">
-        <div className="section-heading reveal">
+        <Reveal className="section-heading">
           <div className="eyebrow">• Certificates & programs</div>
-        </div>
+        </Reveal>
         <div className="cert-grid">
           {CERTIFICATES.map((certificate) => (
             <Reveal
@@ -190,7 +190,7 @@ export default function Education() {
         </div>
       </section>
 
-      <section className="cta shell reveal">
+      <Reveal as="section" className="cta shell">
         <div>
           <div className="eyebrow">• Keep learning</div>
           <h2>Learning never really stops.</h2>
@@ -202,7 +202,7 @@ export default function Education() {
         <Link className="button button-white" to="/contact">
           Let's Talk <span>→</span>
         </Link>
-      </section>
+      </Reveal>
     </>
   );
 }

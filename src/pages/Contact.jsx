@@ -46,12 +46,14 @@ export default function Contact() {
   return (
     <>
       <section className="page-hero shell">
-        <div className="eyebrow reveal">• Contact</div>
-        <h1 className="page-title reveal">Let's talk about what you're building.</h1>
-        <p className="page-intro reveal">
+        <Reveal className="eyebrow">• Contact</Reveal>
+        <Reveal as="h1" className="page-title">
+          Let's talk about what you're building.
+        </Reveal>
+        <Reveal as="p" className="page-intro">
           Have a project, question or collaboration in mind? Send a message and
           I'll get back to you.
-        </p>
+        </Reveal>
       </section>
 
       <section className="section shell">
@@ -122,9 +124,9 @@ export default function Contact() {
       </section>
 
       <section className="section shell">
-        <div className="section-heading reveal">
+        <Reveal className="section-heading">
           <div className="eyebrow">• FAQ</div>
-        </div>
+        </Reveal>
         <Faq items={CONTACT_FAQ} />
       </section>
     </>

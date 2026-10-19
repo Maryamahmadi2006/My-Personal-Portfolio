@@ -49,35 +49,35 @@ export default function Home() {
   return (
     <>
       <section className="hero shell">
-        <div className="eyebrow reveal">
+        <Reveal className="eyebrow">
           <span className="status-dot"> </span>
           Available for work
-        </div>
-        <h1 className="hero-title reveal">
+        </Reveal>
+        <Reveal as="h1" className="hero-title">
           I'm Maryam, a Front-End Developer & Web Designer.
-        </h1>
-        <p className="hero-copy reveal">
+        </Reveal>
+        <Reveal as="p" className="hero-copy">
           I'm passionate about technology, web design, and creating meaningful
           digital experiences. I'm continuously developing my skills through
           hands-on training, real projects, and independent learning.
-        </p>
-        <div className="hero-actions reveal">
+        </Reveal>
+        <Reveal className="hero-actions">
           <Link className="button button-dark" to="/work">
             View selected work <span>→</span>
           </Link>
           <Link className="button button-light" to="/contact">
             Let's talk <span>→</span>
           </Link>
-        </div>
+        </Reveal>
       </section>
 
       <section className="section shell" id="work">
-        <div className="section-heading reveal">
+        <Reveal className="section-heading">
           <div className="eyebrow">• Selected work</div>
           <Link className="text-link" to="/work">
             View all work <span>→</span>
           </Link>
-        </div>
+        </Reveal>
         <div className="project-grid">
           {homeProjects.map((card, index) => (
             <ProjectCard card={card} index={index} key={card.slug} />
@@ -87,9 +87,9 @@ export default function Home() {
 
       <section className="section shell">
         <div className="about-preview">
-          <div className="section-heading reveal">
+          <Reveal className="section-heading">
             <div className="eyebrow">• About me</div>
-          </div>
+          </Reveal>
           <div className="about-preview-grid">
             <Reveal className="about-copy" variant="left">
               <h2 className="display-small">Hello! I'm Maryam,</h2>
@@ -111,26 +111,26 @@ export default function Home() {
       </section>
 
       <section className="section shell">
-        <div className="section-heading reveal">
+        <Reveal className="section-heading">
           <div className="eyebrow">• Services</div>
-        </div>
+        </Reveal>
         <div className="service-list stagger">
           {SERVICES.map((service, index) => (
-            <article className="service reveal" key={service.title}>
+            <Reveal as="article" className="service" key={service.title}>
               <div>
                 <h3>{service.title}</h3>
                 <p>{service.text}</p>
               </div>
               <span className="service-number">{"0" + (index + 1)}</span>
-            </article>
+            </Reveal>
           ))}
         </div>
       </section>
 
       <section className="section shell">
-        <div className="section-heading reveal">
+        <Reveal className="section-heading">
           <div className="eyebrow">• Testimonials</div>
-        </div>
+        </Reveal>
         <Reveal className="testimonial-feature" delay={120} variant="scaleOnly">
           <div className="testimonial-mark">“</div>
           <div className="testimonial-body">
@@ -148,13 +148,13 @@ export default function Home() {
       </section>
 
       <section className="section shell">
-        <div className="section-heading reveal">
+        <Reveal className="section-heading">
           <div className="eyebrow">• FAQ</div>
-        </div>
+        </Reveal>
         <Faq items={HOME_FAQ} />
       </section>
 
-      <section className="cta shell reveal">
+      <Reveal as="section" className="cta shell">
         <div>
           <div className="eyebrow">• Have a project in mind?</div>
           <h2>Let's bring your vision to life.</h2>
@@ -166,7 +166,7 @@ export default function Home() {
         <Link className="button button-white" to="/contact">
           Start a conversation <span>→</span>
         </Link>
-      </section>
+      </Reveal>
     </>
   );
 }

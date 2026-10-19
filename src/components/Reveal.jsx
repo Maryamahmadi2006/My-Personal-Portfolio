@@ -31,6 +31,10 @@ const Reveal = forwardRef(function Reveal(
     const element = localRef.current;
     if (!element) return undefined;
 
+    // Marks this element as handled by this component, so the global
+    // safety-net observer in Layout never touches it twice.
+    element.setAttribute("data-reveal-managed", "");
+
     const show = () => {
       element.style.setProperty("--reveal-delay", `${delay}ms`);
       element.classList.add("visible");

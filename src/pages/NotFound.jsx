@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Reveal from "../components/Reveal.jsx";
 import usePageMeta from "../hooks/usePageMeta.js";
 
 export default function NotFound() {
@@ -9,16 +10,18 @@ export default function NotFound() {
 
   return (
     <section className="page-hero shell">
-      <div className="eyebrow reveal">• 404</div>
-      <h1 className="page-title reveal">This page doesn't exist.</h1>
-      <p className="page-intro reveal">
+      <Reveal className="eyebrow">• 404</Reveal>
+      <Reveal as="h1" className="page-title">
+        This page doesn't exist.
+      </Reveal>
+      <Reveal as="p" className="page-intro">
         The page you're looking for may have moved, or the link is outdated.
-      </p>
-      <p className="page-intro reveal">
+      </Reveal>
+      <Reveal as="p" className="page-intro">
         <Link className="text-link" to="/">
           Back to the homepage <span>→</span>
         </Link>
-      </p>
+      </Reveal>
     </section>
   );
 }

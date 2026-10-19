@@ -23,10 +23,14 @@ export default function ProjectDetail() {
   return (
     <>
       <section className="page-hero shell project-hero">
-        <div className="eyebrow reveal">• {project.categoryLabel}</div>
-        <h1 className="page-title reveal">{project.title}</h1>
-        <p className="page-intro reveal">{project.intro}</p>
-        <div className="project-meta reveal">
+        <Reveal className="eyebrow">• {project.categoryLabel}</Reveal>
+        <Reveal as="h1" className="page-title">
+          {project.title}
+        </Reveal>
+        <Reveal as="p" className="page-intro">
+          {project.intro}
+        </Reveal>
+        <Reveal className="project-meta">
           <div>
             <span>Project</span>
             <strong>{project.meta.project}</strong>
@@ -51,7 +55,7 @@ export default function ProjectDetail() {
               </a>
             </strong>
           </div>
-        </div>
+        </Reveal>
       </section>
 
       <Reveal as="section" className="case-image shell">
@@ -77,7 +81,7 @@ export default function ProjectDetail() {
         ))}
       </section>
 
-      <section className="cta shell reveal">
+      <Reveal as="section" className="cta shell">
         <div>
           <div className="eyebrow">• Next project</div>
           <h2>Want to build something like this?</h2>
@@ -85,7 +89,7 @@ export default function ProjectDetail() {
         <Link className="button button-white" to="/contact">
           Start a project <span>→</span>
         </Link>
-      </section>
+      </Reveal>
     </>
   );
 }
