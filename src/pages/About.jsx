@@ -8,7 +8,7 @@ const EXPERIENCE = [
   {
     period: "2026 — Present",
     title: "Front-End Development Program",
-    text: "Hands-on training focused on front-end development, web design, JavaScript, responsive interfaces, collaborative projects, freelancing, and professional skills.",
+    text: "Hands-on training focused on front-end development, web design, JavaScript, React, responsive interfaces, collaborative projects, freelancing, and professional skills.",
   },
   {
     period: "6–7 Month Program",
@@ -42,6 +42,49 @@ const CAPABILITIES = [
     number: "04",
     title: "Launch",
     text: "QA, polish, SEO foundations and handoff.",
+  },
+];
+
+const SKILLS = [
+  {
+    number: "01",
+    title: "HTML & CSS",
+    text: "Semantic page structure, responsive layouts, and clean styling.",
+  },
+  {
+    number: "02",
+    title: "JavaScript",
+    text: "Interactive interfaces and DOM-based functionality.",
+  },
+  {
+    number: "03",
+    title: "React",
+    text: "Component-based development, routing, and state — used in my newest projects.",
+  },
+  {
+    number: "04",
+    title: "Bootstrap",
+    text: "Responsive grids and components for fast, solid layouts.",
+  },
+  {
+    number: "05",
+    title: "WordPress",
+    text: "Complete custom websites designed and built with WordPress.",
+  },
+  {
+    number: "06",
+    title: "Git & GitHub",
+    text: "Version control, collaboration, and publishing through GitHub Pages.",
+  },
+  {
+    number: "07",
+    title: "Figma",
+    text: "UI design, wireframes, and layout exploration.",
+  },
+  {
+    number: "08",
+    title: "Framer",
+    text: "Interactive design work and recreating Framer-built sites.",
   },
 ];
 
@@ -143,6 +186,21 @@ export default function About() {
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
               </div>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      <section className="section shell">
+        <Reveal className="section-heading">
+          <div className="eyebrow">• Skills & tools</div>
+        </Reveal>
+        <div className="capability-grid">
+          {SKILLS.map((item, index) => (
+            <Reveal as="div" className="capability" delay={index * 60} key={item.title}>
+              <span>{item.number}</span>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
             </Reveal>
           ))}
         </div>

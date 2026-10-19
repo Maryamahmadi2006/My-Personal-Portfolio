@@ -39,7 +39,7 @@ const EDUCATION_TIMELINE = [
     number: "06",
     title: "Netlinks",
     strong: "Front-End Development Program · 2026 – Present",
-    text: "Currently developing practical skills in HTML, CSS, JavaScript, Bootstrap, responsive web design, WordPress, Git, GitHub, and real-world web projects.",
+    text: "Currently developing practical skills in HTML, CSS, JavaScript, React, Bootstrap, responsive web design, WordPress, Git, GitHub, and real-world web projects.",
   },
 ];
 

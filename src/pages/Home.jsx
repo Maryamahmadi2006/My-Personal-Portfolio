@@ -13,7 +13,7 @@ const SERVICES = [
   },
   {
     title: "Front-End Development",
-    text: "Building responsive websites using HTML, CSS, JavaScript, and Bootstrap.",
+    text: "Building responsive websites using HTML, CSS, JavaScript, React, and Bootstrap.",
   },
   {
     title: "UI Design",
@@ -24,7 +24,7 @@ const SERVICES = [
 const HOME_FAQ = [
   {
     q: "What technologies do I work with?",
-    a: "HTML, CSS, JavaScript, Bootstrap, WordPress, Git, GitHub, Figma, and Framer.",
+    a: "HTML, CSS, JavaScript, React, Bootstrap, WordPress, Git, GitHub, Figma, and Framer.",
   },
   {
     q: "What am I currently learning?",
